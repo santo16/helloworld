@@ -53,8 +53,10 @@ int main()
     unsigned char sChar{179};
     float nFloat_Num{31};
     float nFloat_Den{3};
+float n_New_Year{2.018e3};
     uint16_t nInt_16{65535};
     uint8_t nInt_8{65};
+cout<< "Happy New Year" << n_New_Year << endl;
     cout<< "nInit_8= " << nInt_8 <<endl;
     cout<< "nFloat_Num/nFloat_Den="<<nFloat_Num/nFloat_Den <<endl;
     cout<< "31/3="<<nFloat_Num/nFloat_Den <<endl;
