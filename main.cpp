@@ -38,6 +38,7 @@ int nDate(29), nYear(2017);
     int nNum_int_3;
     unsigned char sChar{179};
     float nFloat_Num{31};
+<<<<<<< HEAD
     float nFloat_Den{3.000f};
     uint16_t nInt_16{65535};
     uint8_t nInt_8{65};
@@ -47,6 +48,13 @@ int nDate(29), nYear(2017);
     cout<< "current value is:"<< nNum_int<<endl;
     printInteger(nNum_int);
     cout<< "floating point number nFloat_Num\'" << nFloat_Num << nFloat_Den <<endl;
+=======
+    float nFloat_Den{3};
+float n_New_Year{2.018e3};
+    uint16_t nInt_16{65535};
+    uint8_t nInt_8{65};
+cout<< "Happy New Year" << n_New_Year << endl;
+>>>>>>> fbc288b95b654fcff5d52af4a52902f4600707d2
     cout<< "nInit_8= " << nInt_8 <<endl;
     cout<< "nFloat_Num /Float_Den="<<nFloat_Num/nFloat_Den<<endl;
     cout<< "31/3="<<nFloat_Num/nFloat_Den <<endl;
