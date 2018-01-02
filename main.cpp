@@ -1,26 +1,9 @@
-//testing the Git Repository in Windows platform
-//
-///*#include <iostream>
-
-using namespace std;
-
-int main()
-{
-
-    cout << "Hello world!" << endl;
-    return 0;
-}
-//0x7FFDBACAE488
-*/
-
 #include <iostream>
-#include "first_program.h"
+//#include "first_program.h"
 #include <cstdint>
 
 using namespace std;
 
-
-/*
 int function_call()
 {
     int x;
@@ -33,30 +16,39 @@ cout<<"Exiting the function call\n";
 return x;
 cout<<"THis line will never get executed\n";
 }
-*/
+
 int doubleTheNumber(int x)
 {
     return 2*x;
 }
 
-int main()
+void printInteger(int myValue)
 {
-#ifndef DEFINED
-#define DEFINED 10
-    //this is the first time i wrote my C++ program
+    cout<< "value before increment is::"<< myValue <<endl;
+    myValue++;
+    cout<< "value after increment is::"<< myValue <<endl;
+}
 
-    int nDate(29), nYear(2017);
-    int nNum_int{};
+void Variables_Introduction(void)
+{
+int nDate(29), nYear(2017);
+    int Num_int;
     int nNum_int_1();
     int nNum_int_2(0);
     int nNum_int_3;
     unsigned char sChar{179};
     float nFloat_Num{31};
-    float nFloat_Den{3};
+    float nFloat_Den{3.000f};
     uint16_t nInt_16{65535};
     uint8_t nInt_8{65};
+    cout<< "Please Enter a Value:";
+    cin>>Num_int;
+    const int nNum_int=Num_int;
+    cout<< "current value is:"<< nNum_int<<endl;
+    printInteger(nNum_int);
+    cout<< "floating point number nFloat_Num\'" << nFloat_Num << nFloat_Den <<endl;
     cout<< "nInit_8= " << nInt_8 <<endl;
-    cout<< "nFloat_Num/nFloat_Den="<<nFloat_Num/nFloat_Den <<endl;
+    cout<< "nFloat_Num /Float_Den="<<nFloat_Num/nFloat_Den<<endl;
     cout<< "31/3="<<nFloat_Num/nFloat_Den <<endl;
     cout << "size of schar: \t"<< sizeof(sChar) << "°"<<"\tsChar = "<< sChar << endl ;
     string sString("This is a string");
@@ -77,23 +69,31 @@ int main()
     cout<<"size of long long:\t \t"<<sizeof(long long)<< endl; //prints 8
     cout<<"size of boolean: \t"<<sizeof(bool)<< endl; //prints 1
     cout<<"size of float:\t \t"<<sizeof(float)<< endl; //prints 4
-//Third program
-    //cout<<"Double Number returned is:" << doubleTheNumber(functionCall())<<endl;
-    //cout<<"function returned : " << functionCall() << endl;
-//in CPP return value is must
-#endif
+}
 
-#ifndef DEFINED
-    //this is the first time i wrote my C++ program
-//int date = 29, year=2017;
-//string first_string = "This is first string statement";
-    cout << "My First program is on: "<< date << "November" << year <<endl;
-    cout<<"The string is :" << first_string << endl;
-//Third program
-    cout<<"Double Number returned is:" << double_number(function_call())<<endl;
-    cout<<"function returned : " << function_call() << endl;
-//in CPP return value is must
-#endif
+void Task1(void)
+{
+        float fVariable1, fVariable2;
+    char cMathOperator;
+    cout<<"Please enter a floating point number";
+    cin>>fVariable1;
+    cout<<"Please enter second floating point number";
+    cin>>fVariable2;
+    cout<<"Please provide a mathematical symbols from: +, -, *, /";
+    cin>>cMathOperator;
+    if (cMathOperator == '+')
+        cout<<"Result is:"<<fVariable1+fVariable2<<endl;
+    else if (cMathOperator == '-')
+        cout<<"Result is:"<<fVariable1-fVariable2<<endl;
+            else if (cMathOperator == '*')
+        cout<<"Result is:"<<fVariable1*fVariable2<<endl;
+            else if (cMathOperator == '/')
+        cout<<"Result is:"<<fVariable1/fVariable2<<endl;
+}
+
+int main()
+{
+    //code comes here
 
     return 0;
 }
